@@ -1,0 +1,105 @@
+@import url('@/assets/fonts/MiSans/MiSans.css');
+@import url('@/assets/fonts/MiLanPro/MiLanPro.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  min-width: 320px;
+  font-family: "MiSans, MI Lan Pro, sans-serif, serif";
+  background-image: url("@/assets/Cute_Little_Bear_Bamboo_HD_Photo Wallpaper_1920x1080[10wallpaper.com].jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+:root {
+  --margin-size: 30px;
+  --user-avatar-size: 60px;
+  --header-height: 450px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --margin-size: 20px;
+    --user-avatar-size: 50px;
+    --header-height: 350px;
+  }
+}
+
+html {
+  --main-bg-color: #fff;
+  --main-text-color: #000;
+  --motto-text-color: #000;
+  --header-bg-color: rgba(0, 0, 0, 0.1);
+  --blog-back-bg-color: #f6f6f6;
+  --blog-back-line-color: #e8e8e8;
+  --blog-back-text-color: #000;
+  --blog-back-trigger-bg-color: #E3E3E3;
+}
+
+html.dark {
+  --main-bg-color: #181818;
+  --main-text-color: #d0d0d0;
+  --motto-text-color: #747474;
+  --header-bg-color: rgba(0, 0, 0, 0.5);
+  --blog-back-bg-color: #2c2c2c;
+  --blog-back-line-color: #3a3a3a;
+  --blog-back-text-color: #939395;
+  --blog-back-trigger-bg-color: #2c2c2c;
+}
+
+::view-transition-old(*) {
+  animation: none;
+}
+
+::view-transition-new(*) {
+  animation: clip .8s ease-in;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 99999999999999999999;
+}
+
+html.dark::view-transition-old(*) {
+  animation: clip .8s ease-in reverse;
+}
+
+html.dark::view-transition-new(*) {
+  animation: none;
+}
+
+html.dark::view-transition-old(root) {
+  z-index: 99999999999999999999;
+}
+
+html.dark::view-transition-new(root) {
+  z-index: 1;
+}
+
+@keyframes clip {
+  from {
+    clip-path: circle(0% at var(--x) var(--y));
+  }
+
+  to {
+    clip-path: circle(100% at var(--x) var(--y));
+  }
+}
