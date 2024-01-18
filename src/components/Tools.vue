@@ -11,6 +11,10 @@ const darkStore = useDarkStore()
 const themeBtn = ($event) => {
   darkStore.toggleTheme($event)
 }
+
+const reset = () => {
+  window.location.reload()
+}
 </script>
 
 <template>
@@ -20,7 +24,7 @@ const themeBtn = ($event) => {
       <img :src="comment" alt="info">
     </div>
     <div class="tools-end">
-      <img :src="reload" alt="reset">
+      <img :src="reload" alt="reset" @click="reset">
       <img v-if="darkStore.dark" :src="moon" alt="moon" @click="themeBtn">
       <img v-else  :src="sun" alt="sun" @click="themeBtn">
     </div>
