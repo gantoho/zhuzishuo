@@ -59,8 +59,8 @@ const reset = () => {
   
   .tools-start {
     img {
-      width: 36px;
-      height: 36px;
+      width: 26px;
+      height: 26px;
       cursor: pointer;
       filter: drop-shadow(2px 2px 4px #0000007a);
 
@@ -72,8 +72,8 @@ const reset = () => {
 
   .tools-end {
     img {
-      width: 36px;
-      height: 36px;
+      width: 26px;
+      height: 26px;
       cursor: pointer;
       filter: drop-shadow(2px 2px 4px #0000007a);
 
