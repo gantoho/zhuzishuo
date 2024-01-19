@@ -66,6 +66,7 @@ html.dark {
   --blog-back-text-color: #939395;
   --blog-back-trigger-bg-color: #272727;
   --blog-posted-text-color: #898989;
+  color-scheme: dark;
 }
 
 ::view-transition-old(*) {
