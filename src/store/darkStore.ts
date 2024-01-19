@@ -18,9 +18,9 @@ const useDarkStore = defineStore('darkStore', () => {
       Math.max(x, innerWidth - x),
       Math.max(y, innerHeight - y),
     )
-    document.documentElement.style.setProperty('--x', x + 'px')
-    document.documentElement.style.setProperty('--y', y + 'px')
-    document.documentElement.style.setProperty('--r', endRadius + 'px')
+    document.documentElement.style.setProperty('--tx', x + 'px')
+    document.documentElement.style.setProperty('--ty', y + 'px')
+    document.documentElement.style.setProperty('--tr', endRadius + 'px')
     // 判断浏览器是否支持document.startViewTransition
     if ((document as any).startViewTransition) {
       // 如果支持就使用document.startViewTransition方法

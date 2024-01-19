@@ -98,10 +98,10 @@ html.dark::view-transition-new(root) {
 
 @keyframes clip {
   from {
-    clip-path: circle(0% at var(--x) var(--y));
+    clip-path: circle(0% at var(--tx) var(--ty));
   }
 
   to {
-    clip-path: circle(100% at var(--x) var(--y));
+    clip-path: circle(var(--tr) at var(--tx) var(--ty));
   }
 }

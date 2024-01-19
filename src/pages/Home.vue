@@ -130,7 +130,7 @@ const data: BlogProps[] = [
         type: "img",
         urls: [
           jc,
-          jc,
+          testImg,
         ],
       },
       {
