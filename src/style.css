@@ -18,6 +18,10 @@ body {
   background-attachment: fixed;
 }
 
+html.dark body {
+  background-image: url("@/assets/Andromeda_Galaxy_Vast_Universe_Milky_Way_Space_5K_1920x1080.jpg");
+}
+
 a {
   text-decoration: none;
 }

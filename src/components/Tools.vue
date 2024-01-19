@@ -27,13 +27,17 @@ const published = () => {
 const reset = () => {
   window.location.reload()
 }
+
+const info = () => {
+  alert('TODO：信息功能未完成')
+}
 </script>
 
 <template>
   <div class="tools">
     <div class="tools-start">
       <img :src="pencil" alt="publish" @click="publish">
-      <img :src="comment" alt="info">
+      <img :src="comment" alt="info" @click="info">
     </div>
     <div class="tools-end">
       <img :src="reload" alt="reset" @click="reset">
