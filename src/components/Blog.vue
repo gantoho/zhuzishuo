@@ -54,7 +54,14 @@ const handleComment = () => {
       <div class="resource">
         <template v-for="resource in blog.resource">
           <template v-if="resource.urls?.length > 0 &&resource.type === 'img'">
-            <img v-for="url in resource.urls" :src="url" alt="" :key="url">
+            <template v-if="resource.urls?.length >= 2">
+              <div class="resource-img-group">
+                <img v-for="url in resource.urls" :src="url" alt="" :key="url">
+              </div>
+            </template>
+            <template v-else>
+              <img v-for="url in resource.urls" :src="url" alt="" :key="url">
+            </template>
           </template>
         </template>
       </div>
@@ -124,6 +131,17 @@ const handleComment = () => {
     .resource {
       width: 100%;
       margin-bottom: 15px;
+
+      .resource-img-group {
+        display: flex;
+        gap: 6px;
+
+        img {
+          width: 150px;
+          height: 150px;
+          object-fit: cover;
+        }
+      }
 
       img {
         width: 100%;
