@@ -49,17 +49,19 @@ html {
   --blog-back-line-color: #e8e8e8;
   --blog-back-text-color: #000;
   --blog-back-trigger-bg-color: #E3E3E3;
+  --blog-posted-text-color: #898989;
 }
 
 html.dark {
   --main-bg-color: #181818;
   --main-text-color: #d0d0d0;
-  --motto-text-color: #747474;
+  --motto-text-color: #8e8e8e;
   --header-bg-color: rgba(0, 0, 0, 0.5);
-  --blog-back-bg-color: #2c2c2c;
+  --blog-back-bg-color: #1e1e1e;
   --blog-back-line-color: #3a3a3a;
   --blog-back-text-color: #939395;
-  --blog-back-trigger-bg-color: #2c2c2c;
+  --blog-back-trigger-bg-color: #272727;
+  --blog-posted-text-color: #898989;
 }
 
 ::view-transition-old(*) {

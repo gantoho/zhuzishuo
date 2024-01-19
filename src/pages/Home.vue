@@ -1,4 +1,5 @@
 <script setup lang='ts'>
+import { computed } from 'vue'
 import Blog from '@/components/Blog.vue'
 import type { BlogProps } from '@/components/types'
 
@@ -118,13 +119,48 @@ const data: BlogProps[] = [
         }
       ]
     }
+  },
+  {
+    id: 2,
+    name: "朱梓硕",
+    avatar: testImg1,
+    text: `今夜谁都别睡`,
+    resource: [
+      {
+        type: "img",
+        urls: [
+          jc,
+        ],
+      },
+      {
+        type: "video",
+      },
+      {
+        type: "audio",
+      }
+    ],
+    posted: "2023-12-31 23:40:30",
+    like: {
+      count: 0,
+      list: [ ]
+    },
+    comment: {
+      count: 100,
+      list: [ ]
+    }
   }
 ]
+
+const dataCompted = computed(() => {
+  return data.sort((a, b) => {
+    return new Date(b.posted).getTime() - new Date(a.posted).getTime()
+  })
+})
 </script>
 
 <template>
   <div class="home">
-    <Blog v-for="item in data" :key="item.id" :blog="item" />
+    <Blog v-for="item in dataCompted" :key="item.id" :blog="item" />
   </div>
 </template>
 

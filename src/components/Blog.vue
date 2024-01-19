@@ -10,6 +10,7 @@ const { flag, toggle } = useToggle(false)
 const showMore = () => {
   toggle()
 }
+
 // const btnsRef: any = ref([])
 // const showMore = () => {
 //   if (btnsRef.value.classList.contains("active")) {
@@ -68,12 +69,12 @@ const handleComment = () => {
         </div>
       </div>
       <div class="back">
-        <div class="likes">
+        <div class="likes" v-if="likes.list.length > 0">
           <span class="like" v-for="like in likes.list" :key="like.toString">
             {{ like.name }}
           </span>
         </div>
-        <div class="comments">
+        <div class="comments" v-if="comments.list.length > 0">
           <div class="comment" v-for="comment in comments.list" :key="comment.toString">
             <i>{{ comment.name }}</i>: {{ comment.comment }}
           </div>
@@ -107,7 +108,7 @@ const handleComment = () => {
 
     > .name {
       width: 100%;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 900;
       color: #576B95;
       margin-bottom: 10px;
@@ -137,7 +138,7 @@ const handleComment = () => {
 
       .posted {
         font-size: 14px;
-        color: var(--main-text-color);
+        color: var(--blog-posted-text-color);
       }
 
       .more {
@@ -203,6 +204,7 @@ const handleComment = () => {
       margin-bottom: 15px;
       background-color: var(--blog-back-bg-color);
       border-radius: 4px;
+      font-size: 14px;
 
       .likes {
         padding: 4px 8px;
