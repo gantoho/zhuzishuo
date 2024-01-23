@@ -10,7 +10,7 @@ import jc from '@/assets/a70ba1cd29ded8760d47bf0fc7b58c14.jpg'
 const data: BlogProps[] = [
   {
     id: 0,
-    name: "朱梓硕",
+    name: "ZZS",
     avatar: testImg1,
     text: `谁知道这是什么动物`,
     resource: [
@@ -59,7 +59,7 @@ const data: BlogProps[] = [
           comment: "竹子好吃"
         },
         {
-          name: "朱梓硕",
+          name: "ZZS",
           avatar: "/assets/photo.webp",
           time: "2023-12-12 12:12",
           comment: "这是什么动物"
@@ -69,7 +69,7 @@ const data: BlogProps[] = [
   },
   {
     id: 1,
-    name: "朱梓硕",
+    name: "ZZS",
     avatar: testImg1,
     text: `谁与争锋`,
     resource: [
@@ -109,20 +109,20 @@ const data: BlogProps[] = [
           name: "独善QAQ",
           avatar: "/assets/photo.webp",
           time: "2023-12-12 12:12:30",
-          comment: "老朱，晚上喝两杯"
+          comment: "老Z，晚上喝两杯"
         },
         {
           name: "老刘",
           avatar: "/assets/photo.webp",
           time: "2023-12-12 12:12",
-          comment: "老朱，别跟他喝"
+          comment: "老Z，别跟他喝"
         }
       ]
     }
   },
   {
     id: 2,
-    name: "朱梓硕",
+    name: "ZZS",
     avatar: testImg1,
     text: `今夜谁都别睡`,
     resource: [
