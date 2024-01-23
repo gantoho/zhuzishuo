@@ -101,6 +101,8 @@ const handleComment = () => {
     height: fit-content;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 0 5px 0px #a5a5a5;
+    border-radius: 10px;
 
     img {
       width: var(--user-avatar-size);
