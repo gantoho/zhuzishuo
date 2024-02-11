@@ -1,1 +1,0 @@
-import{_ as o,o as c,c as e}from"./index-C5fchIpi.js";const t={},n={class:"not-found"};function s(_,a){return c(),e("div",n,"404")}const d=o(t,[["render",s],["__scopeId","data-v-62d2ca84"]]);export{d as default};
