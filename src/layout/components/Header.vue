@@ -2,7 +2,7 @@
 import {  } from 'vue'
 import Tools from '@/components/Tools.vue'
 
-const motto = "你好，我叫ZZS，欢迎访问我的朋友圈";
+const motto = "你好，我叫朱梓硕，欢迎访问我的朋友圈";
 </script>
 
 <template>
@@ -10,7 +10,7 @@ const motto = "你好，我叫ZZS，欢迎访问我的朋友圈";
     <Tools />
     <div class="info">
       <div class="avatar" :data-motto-text="motto">
-        <div class="name">ZZS</div>
+        <div class="name">朱梓硕</div>
         <img src="@/assets/Snipaste_2024-01-17_17-42-41.png" width="100%" height="100%" />
       </div>
     </div>
