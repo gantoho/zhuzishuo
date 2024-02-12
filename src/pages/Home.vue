@@ -6,6 +6,8 @@ import type { BlogProps } from '@/components/types'
 import testImg from '@/assets/Cute_Little_Bear_Bamboo_HD_Photo Wallpaper_1920x1080[10wallpaper.com].jpg'
 import testImg1 from '@/assets/Snipaste_2024-01-17_17-42-41.png'
 import testImg2 from '@/assets/WechatIMG18.jpg'
+import testImg3 from '@/assets/WechatIMG4.jpg'
+import testImg4 from '@/assets/WechatIMG5.jpg'
 import jc from '@/assets/a70ba1cd29ded8760d47bf0fc7b58c14.jpg'
 
 const data: BlogProps[] = [
@@ -206,6 +208,43 @@ const data: BlogProps[] = [
           avatar: "/assets/photo.webp",
           time: "2023-12-12 12:12",
           comment: "两张一套房"
+        }
+      ]
+    }
+  },
+  {
+    id: 4,
+    name: "朱梓硕",
+    avatar: testImg1,
+    text: `如数家珍`,
+    resource: [
+      {
+        type: "img",
+        urls: [
+          testImg3,
+          testImg4
+        ],
+      },
+      {
+        type: "video",
+      },
+      {
+        type: "audio",
+      }
+    ],
+    posted: "2024-02-12 22:01:39",
+    like: {
+      count: 100,
+      list: []
+    },
+    comment: {
+      count: 100,
+      list: [
+        {
+          name: "朱梓硕",
+          avatar: "/assets/photo.webp",
+          time: "2023-12-12 12:12",
+          comment: "😁"
         }
       ]
     }
