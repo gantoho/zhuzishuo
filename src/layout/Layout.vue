@@ -3,6 +3,9 @@ import {  } from 'vue'
 import Header from './components/Header.vue';
 import Main from './components/Main.vue';
 import Footer from './components/Footer.vue';
+
+import Preview from '@/components/Preview.vue'
+import usePreviewStore from '@/store/previewStore';
 </script>
 
 <template>
@@ -11,6 +14,8 @@ import Footer from './components/Footer.vue';
     <Main><RouterView></RouterView></Main>
     <Footer />
   </div>
+
+  <Preview v-if="usePreviewStore().previewState"/>
 </template>
 
 <style lang='scss' scoped>

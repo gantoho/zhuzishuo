@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import { useToggle } from '@/hooks/useToggle'
 import type { BlogProps } from '@/components/types'
+import usePreviewStore from '@/store/previewStore';
 
 
 const props = defineProps<{blog: BlogProps}>()
@@ -39,6 +40,13 @@ const handleComment = () => {
     comment: "评论内容",
   })
 }
+
+const previewHook = () => {
+  const previewStore = usePreviewStore()
+
+  return previewStore.toogleState
+}
+const toogleState = previewHook()
 </script>
 
 <template>
@@ -56,11 +64,11 @@ const handleComment = () => {
           <template v-if="resource.urls?.length > 0 &&resource.type === 'img'">
             <template v-if="resource.urls?.length >= 2">
               <div class="resource-img-group">
-                <img v-for="url in resource.urls" :src="url" alt="" :key="url">
+                <img @click="toogleState($event)" v-for="url in resource.urls" :src="url" alt="" :key="url">
               </div>
             </template>
             <template v-else>
-              <img v-for="url in resource.urls" :src="url" alt="" :key="url">
+              <img @click="toogleState($event)" v-for="url in resource.urls" :src="url" alt="" :key="url">
             </template>
           </template>
         </template>
