@@ -24,7 +24,7 @@ jobs:
         version: latest
     - name: Install and Build
       run: |
-        pnpm i
+        pnpm install
         pnpm build
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v4
