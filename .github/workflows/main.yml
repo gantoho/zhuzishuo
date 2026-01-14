@@ -16,8 +16,8 @@ jobs:
         persist-credentials: true
     - name: Install and Build
       run: |
-        yarn
-        yarn build
+        pnpm i
+        pnpm build
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v4
       with:
