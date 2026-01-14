@@ -3,7 +3,7 @@ import {  } from 'vue'
 </script>
 
 <template>
-  <div class="footer">@<a href="//ganto.me">zhuozishuo.ganto.cn</a> &copy; 版权所有</div>
+  <div class="footer"><a target="_blank" href="//zhuzishuo.com">zhuzishuo.com</a> &copy; 版权所有</div>
 </template>
 
 <style lang='scss' scoped>
@@ -13,12 +13,7 @@ import {  } from 'vue'
   color: var(--main-text-color);
 
   a {
-    color: #1b8dff;
-    font-weight: 900;
-
-    &:hover {
-      color: #00ffee;
-    }
+    color: var(--main-text-color);
   }
 }
 </style>

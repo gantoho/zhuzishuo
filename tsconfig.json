@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "ignoreDeprecations": "6.0", // baseUrl 项在typescript 7.0 被弃用，使用此字段声明 6.0 版本后不报错
     "baseUrl": "src",
     "paths": {
       "@/*": ["./*"],

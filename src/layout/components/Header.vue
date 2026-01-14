@@ -2,7 +2,7 @@
 import {  } from 'vue'
 import Tools from '@/components/Tools.vue'
 
-const motto = "你好，我叫朱梓硕，欢迎访问我的朋友圈";
+const motto = "你好，欢迎访问我的朋友圈";
 </script>
 
 <template>

@@ -85,12 +85,12 @@ const toogleState = previewHook()
       </div>
       <div class="back">
         <div class="likes" v-if="likes.list.length > 0">
-          <span class="like" v-for="like in likes.list" :key="like.toString">
+          <span class="like" v-for="like in likes.list" :key?="like.toString">
             {{ like.name }}
           </span>
         </div>
         <div class="comments" v-if="comments.list.length > 0">
-          <div class="comment" v-for="comment in comments.list" :key="comment.toString">
+          <div class="comment" v-for="comment in comments.list" :key?="comment.toString">
             <i>{{ comment.name }}</i>: {{ comment.comment }}
           </div>
         </div>
