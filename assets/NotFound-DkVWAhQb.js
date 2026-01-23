@@ -1,1 +1,0 @@
-import{_ as o,c,o as e}from"./index-D3aUoOD2.js";const t={},n={class:"not-found"};function s(_,a){return e(),c("div",n,"404")}const d=o(t,[["render",s],["__scopeId","data-v-62d2ca84"]]);export{d as default};
